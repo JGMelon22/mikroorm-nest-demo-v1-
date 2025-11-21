@@ -6,10 +6,10 @@ export class User {
     @PrimaryKey()
     id: string
 
-    @Property()
+    @Property({length: 100})
     name: string
 
-    @Property()
+    @Property({length: 100})
     @Unique()
     public email: string
 }
