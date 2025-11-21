@@ -1,98 +1,77 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+# MikroORM Users API
+A simple web API made with NestJS to understand and document how to work with MikroORM..
+### 🧰 Tech Stack
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+<div style="display: flex; gap: 10px;">
+    <img height="32" width="32" src="https://cdn.simpleicons.org/nestjs" alt="NestJS" title="NestJS" />
+    <img height="32" width="32" src="https://cdn.simpleicons.org/typescript" alt="TypeScript" title="TypeScript" />
+    <img height="32" width="32" src="https://cdn.simpleicons.org/swagger" alt="Swagger" title="Swagger" />
+    <img height="32" src="https://cdn.simpleicons.org/mysql" alt="MySQL" title="MySQL" />
+</div>
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+### 📸 Project Preview
 
-## Description
+<div style="display: flex; gap: 20px; flex-wrap: wrap;">
+  <div>
+    <strong>Swagger UI</strong><br/>
+    <img src="https://github.com/user-attachments/assets/d0b46148-b61a-436e-9cef-dbf1c86bf289" alt="Swagger UI" width="650"/>
+  </div>
+</div>
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+### 🛠️🚀 How to execute it?
 
-## Project setup
+There are two possible ways: locally or via Docker
 
-```bash
-$ npm install
-```
+#### A) Locally:
+1. Clone the current repository:
+   ```bash
+   git clone git@github.com:JGMelon22/mikroorm-nest-demo-v1.git
+   ```
 
-## Compile and run the project
+2. Enter the project directory and install dependencies:
+   ```bash
+   cd mikroorm-nest-demo-v1
+   npm install
+   ```
 
-```bash
-# development
-$ npm run start
+3. Configure the database credentials in the `.env` file to match your MySQL instance
 
-# watch mode
-$ npm run start:dev
+4. Start the application using the Nest CLI:
+   ```bash
+   npm run start:dev
+   ```
 
-# production mode
-$ npm run start:prod
-```
+5. Access the Swagger UI in your browser: `http://localhost:3000/api`
 
-## Run tests
+#### B) Via Docker (WIP)
+1. Clone the current repository:
+   ```bash
+   git clone git@github.com:JGMelon22/SampleNestJS.git
+   ```
 
-```bash
-# unit tests
-$ npm run test
+2. Configure the database credentials in the `.env` file to match your MySQL instance
 
-# e2e tests
-$ npm run test:e2e
+3. Execute with docker-composer:
+   ```bash
+   docker compose up --build
+   ```
+4. Access the Swagger UI in your browser: `http://localhost:3000/api`
 
-# test coverage
-$ npm run test:cov
-```
+### 🧩 Dependencies
+- [`mikro-orm/core`](https://mikro-orm.io/) — A beautiful, simple API for interacting with your database that takes full advantage of TypeScript's type system.
+- [`mikro-orm/cli`](https://mikro-orm.io/docs/cli) — Official CLI for MikroORM, used for running migrations and other tasks.
+- [`mikro-orm/migrations`](https://mikro-orm.io/docs/migrations) — Migration management system for MikroORM.
+- [`mikro-orm/mysql`](https://mikro-orm.io/docs/drivers/mysql) — MySQL driver for MikroORM.
+- [`mikro-orm/nestjs`](https://mikro-orm.io/docs/nestjs) — NestJS integration for MikroORM.
+- [`class-validator`](https://github.com/typestack/class-validator) — Decorator-based property validation for classes.
+- [`class-transformer`](https://github.com/typestack/class-transformer) — Decorator-based transformation, serialization, and deserialization between objects and classes.
 
-## Deployment
 
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
-
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
-
-```bash
-$ npm install -g @nestjs/mau
-$ mau deploy
-```
-
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
-
-## Resources
-
-Check out a few resources that may come in handy when working with NestJS:
-
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+### 📚 References
+- [Documentation | NestJS](https://docs.nestjs.com/) \
+- [NestJS e Swagger: Automatize a geração de documentação para sua API](https://consolelog.com.br/nestjs-swagger-automatizar-geracao-documentacao-api/) \
+- [MikroORM (Core)](https://mikro-orm.io/docs/guide) — A beautiful, simple API for interacting with your database that takes full advantage of TypeScript's type system.
+- [MikroORM (NestJS)](https://mikro-orm.io/docs/usage-with-nestjs) — Integration guide for using MikroORM with NestJS applications.
+- [MikroORM (Configuration)](https://mikro-orm.io/docs/configuration) — How to configure MikroORM in your project.
+- [MikroORM (Migrations)](https://mikro-orm.io/docs/migrations) — Managing database migrations with MikroORM.
+- [MikroORM CLI](https://mikro-orm.io/docs/cli) — Official CLI for MikroORM, used for running migrations and other tasks.
