@@ -8,12 +8,11 @@ import { PaginatedResponse } from 'src/common/interfaces/paginated-response.inte
 
 @Injectable()
 export class UserService {
-
   constructor(
     @InjectRepository(User)
     private readonly userRepository: EntityRepository<User>,
     private readonly em: EntityManager,
-  ) { }
+  ) {}
 
   async create(createUserDto: CreateUserDto): Promise<User> {
     const user = this.userRepository.create(createUserDto);
@@ -22,7 +21,10 @@ export class UserService {
     return user;
   }
 
-  async findAll(page: number = 1, pageSize: number = 10): Promise<PaginatedResponse<User>> {
+  async findAll(
+    page: number = 1,
+    pageSize: number = 10,
+  ): Promise<PaginatedResponse<User>> {
     const [items, total] = await this.userRepository.findAndCount(
       {},
       {

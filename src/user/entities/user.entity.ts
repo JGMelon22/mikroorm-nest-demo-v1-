@@ -12,7 +12,10 @@ export class User {
   @Property({ length: 100 })
   name: string;
 
-  @ApiProperty({ description: 'User email address', example: 'john@example.com' })
+  @ApiProperty({
+    description: 'User email address',
+    example: 'john@example.com',
+  })
   @Property({ length: 100 })
   @Unique()
   email: string;

@@ -25,7 +25,7 @@ import { PaginatedResponse } from 'src/common/interfaces/paginated-response.inte
 @ApiTags('Users')
 @Controller('/user')
 export class UserController {
-  constructor(private readonly userService: UserService) { }
+  constructor(private readonly userService: UserService) {}
 
   @Post()
   @Post()
@@ -45,13 +45,23 @@ export class UserController {
     return this.userService.create(createUserDto);
   }
 
-@Get()
+  @Get()
   @ApiOperation({
     summary: 'List all users',
     description: 'Returns a list of all registered users.',
   })
-  @ApiQuery({ name: 'page', required: false, description: 'Page number', example: 1 })
-  @ApiQuery({ name: 'pageSize', required: false, description: 'Number of items per page', example: 10 })
+  @ApiQuery({
+    name: 'page',
+    required: false,
+    description: 'Page number',
+    example: 1,
+  })
+  @ApiQuery({
+    name: 'pageSize',
+    required: false,
+    description: 'Number of items per page',
+    example: 10,
+  })
   @ApiResponse({
     status: 200,
     description: 'List of users successfully returned.',
