@@ -1,5 +1,5 @@
 # MikroORM Users API
-A simple web API made with NestJS to understand and document how to work with MikroORM..
+A simple web API made with NestJS to understand and document how to work with MikroORM.
 ### 🧰 Tech Stack
 
 <div style="display: flex; gap: 10px;">
@@ -95,8 +95,8 @@ npm run test
 
 
 ### 📚 References
-- [Documentation | NestJS](https://docs.nestjs.com/) \
-- [NestJS e Swagger: Automatize a geração de documentação para sua API](https://consolelog.com.br/nestjs-swagger-automatizar-geracao-documentacao-api/) \
+- [Documentation | NestJS](https://docs.nestjs.com/) 
+- [NestJS e Swagger: Automatize a geração de documentação para sua API](https://consolelog.com.br/nestjs-swagger-automatizar-geracao-documentacao-api/) 
 - [MikroORM (Core)](https://mikro-orm.io/docs/guide) — A beautiful, simple API for interacting with your database that takes full advantage of TypeScript's type system.  
 - [MikroORM (NestJS)](https://mikro-orm.io/docs/usage-with-nestjs) — Integration guide for using MikroORM with NestJS applications.  
 - [MikroORM (Configuration)](https://mikro-orm.io/docs/configuration) — How to configure MikroORM in your project.  
