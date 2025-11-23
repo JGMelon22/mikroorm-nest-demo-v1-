@@ -14,7 +14,7 @@ A simple web API made with NestJS to understand and document how to work with Mi
 <div style="display: flex; gap: 20px; flex-wrap: wrap;">
   <div>
     <strong>Swagger UI</strong><br/>
-    <img src="https://github.com/user-attachments/assets/d0b46148-b61a-436e-9cef-dbf1c86bf289" alt="Swagger UI" width="650"/>
+    <img src="https://github.com/user-attachments/assets/1d14358e-9c60-4d51-8b71-d5b389d83d78" alt="Swagger UI" width="650"/>
   </div>
 </div>
 
@@ -77,6 +77,13 @@ There are two possible ways: locally or via Docker
 
 6. Access the Swagger UI in your browser: `http://localhost:3000/api`
 
+### 🧪 Running Unit Tests
+
+#### ▶️ Run all unit tests
+```bash
+npm run test
+```
+
 ### 🧩 Dependencies
 - [`mikro-orm/core`](https://mikro-orm.io/) — A beautiful, simple API for interacting with your database that takes full advantage of TypeScript's type system.
 - [`mikro-orm/cli`](https://mikro-orm.io/docs/cli) — Official CLI for MikroORM, used for running migrations and other tasks.
@@ -97,3 +104,6 @@ There are two possible ways: locally or via Docker
 - [MikroORM CLI](https://mikro-orm.io/docs/cli) — Official CLI for MikroORM, used for running migrations and other tasks.  
 - [MikroORM (Advanced Guide)](https://mikro-orm.io/docs/guide/advanced) — Advanced concepts and patterns for working with MikroORM.  
 - [MikroORM Cursor API](https://mikro-orm.io/api/core/class/Cursor) — Documentation for MikroORM's Cursor class, used for efficient iteration over query results.
+- [How to Test Controllers in NestJS with Jest](https://www.luiztools.com.br/post/como-testar-controllers-em-nestjs-com-jest/) — Step-by-step article on unit testing controllers using Jest.  
+- [Testing | NestJS Documentation](https://docs.nestjs.com/fundamentals/testing) — Official NestJS testing guide.  
+- [Writing Unit Tests for your NestJS REST API](https://mariusniemet20.medium.com/writing-unit-tests-for-your-nestjs-rest-api-baf4361132d3) — Best practices and examples for writing solid unit tests for NestJS APIs.
